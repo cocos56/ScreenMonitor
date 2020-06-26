@@ -1,0 +1,6 @@
+bin
+obj
+.vs
+*.spec
+__pycache__
+*.exe
