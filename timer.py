@@ -26,7 +26,9 @@ def getScreenStatus():
 
 def setScreenStatus(status=False):
     global _screenStatus
+    threadLock.acquire()
     _screenStatus = status
+    threadLock.release()
 
 
 def updateTimer():
