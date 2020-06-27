@@ -17,7 +17,7 @@ def setT():
 
 
 def hotkeyCallback():
-    runThread(setT, 0.1)
+    runThread(setT, 0.5)
 
 
 def monitorKeyboard():
