@@ -1,6 +1,8 @@
 import keyboard
 from timer import resetTimer, setTimer
 from config import _screenOffTimer, _hotKey
+from time import sleep
+from multThread import runThread
 
 
 def hookCallback(x):
@@ -9,8 +11,13 @@ def hookCallback(x):
     resetTimer()
 
 
-def hotkeyCallback():
+def setT():
     setTimer(_screenOffTimer)
+    print('通过热键：', _hotKey, '息屏', sep='')
+
+
+def hotkeyCallback():
+    runThread(setT, 0.1)
 
 
 def monitorKeyboard():
