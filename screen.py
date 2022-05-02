@@ -1,4 +1,4 @@
-from ctypes import *
+from ctypes import windll
 from datetime import datetime
 from multThread import threadLock
 from mute import setMute
