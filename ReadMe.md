@@ -9,9 +9,9 @@
 
 非Python程序员，如有这方面的需要，可以留言或者[联系我](https://coco56.gitee.io/blog/about)，我打包成exe程序，再开发一套图形界面。另外如果仅仅想手动关闭屏幕，也可以参考下载并运行打包好的程序：[Windows 一键息屏程序ScreenOff下载及说明](https://coco56.blog.csdn.net/article/details/106956281)
 
-作者暂时仅在Windows 10上进行了测试，测试结果ojbk，没有任何问题，但无法保证在其他系统上也是ojbk的。
+目前仅在Windows 10上进行了测试，测试结果ojbk，没有任何问题，但无法保证在其他系统上也是ojbk的。
 
-最后如果需要把软件设为开机自启，可以参考：[Windows通过修改注册表设置开机启动程序](https://coco56.blog.csdn.net/article/details/102493477)
+最后如果需要把软件设为开机自启，可以参考：[Windows通过修改注册表设置开机启动程序](https://coco56.blog.csdn.net/article/details/102493477)，修改screenMonitor.bat文件，然后将screenMonitor.bat加入到注册表中就行。
 
 # 2. 程序入口
 
