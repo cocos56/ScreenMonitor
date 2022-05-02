@@ -4,3 +4,4 @@ obj
 *.spec
 __pycache__
 *.exe
+.idea
