@@ -6,4 +6,3 @@ from timer import updateTimer
 runThread(monitorMouse)
 runThread(monitorKeyboard)
 runThread(updateTimer)
-
