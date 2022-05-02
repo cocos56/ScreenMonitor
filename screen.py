@@ -32,7 +32,7 @@ def screenOff():
                           'USER32', '', SW_SHOW)
     setScreenStatus()
     setMute()
-    print(datetime.now(), '开启静音，关闭屏幕')
+    print(datetime.now(), '熄灭屏幕，开启静音')
 
 
 if __name__ == "__main__":

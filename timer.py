@@ -35,5 +35,6 @@ def resetTimer():
         setTimer()
     if not getScreenStatus():
         setScreenStatus(True)
+        # 当有鼠标或者键盘事件，操作系统会亮屏，所以只需要做一下取消静音就行了
         setMute(0)
-        print(datetime.now(), '关闭静音')
+        print(datetime.now(), '点亮屏幕，取消静音')
