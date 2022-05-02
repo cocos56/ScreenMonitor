@@ -26,7 +26,8 @@ def updateTimer():
         if not getScreenStatus():
             continue
         print('距离息屏还有：%d秒' % (_screenOffTimer - _timer))
-        if getTimer() > _screenOffTimer: screenOff()
+        if getTimer() > _screenOffTimer:
+            screenOff()
 
 
 def resetTimer():
@@ -36,4 +37,3 @@ def resetTimer():
         setScreenStatus(True)
         setMute(0)
         print(datetime.now(), '关闭静音')
-
