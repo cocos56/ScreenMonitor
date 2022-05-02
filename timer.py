@@ -25,7 +25,7 @@ def updateTimer():
         setTimer(getTimer() + 1)
         if not getScreenStatus():
             continue
-        print(f'距离息屏还有：{_screenOffTimer - _timer}秒')
+        print(f'距离息屏还有：{_screenOffTimer - getTimer()}秒')
         if getTimer() > _screenOffTimer:
             screenOff()
 
