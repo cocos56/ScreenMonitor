@@ -1,0 +1,4 @@
+pynput
+comtypes
+pycaw
+keyboard
