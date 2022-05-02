@@ -1,5 +1,5 @@
 import keyboard
-from timer import resetTimer, setTimer
+from timer import resetTimer
 from config import _hotKey
 from screen import screenOff
 
