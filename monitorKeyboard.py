@@ -13,6 +13,7 @@ def hookCallback(x):
 def hotkeyCallback():
     screenOff()
 
+
 def onPressCallback(x):
     # print(x)
     resetTimer()
