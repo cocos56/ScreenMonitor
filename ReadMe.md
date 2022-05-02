@@ -11,6 +11,8 @@
 
 作者暂时仅在Windows 10上进行了测试，测试结果ojbk，没有任何问题，但无法保证在其他系统上也是ojbk的。
 
+最后如果需要把软件设为开机自启，可以参考：[Windows通过修改注册表设置开机启动程序](https://coco56.blog.csdn.net/article/details/102493477)
+
 # 2. 程序入口
 
 `screenMonitor.py`
