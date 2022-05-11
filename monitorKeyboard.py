@@ -28,7 +28,7 @@ def hotkeyCallback():
 def after_press_hotkey():
     sleep(0.5)
     # print('after_press_hotkey')
-    screenOff()
+    screenOff(infoIndex=1)
     setTimer(_screenOffTimer)
     set_hotkey_status()
 

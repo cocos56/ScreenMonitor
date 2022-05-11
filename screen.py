@@ -23,7 +23,13 @@ def setScreenStatus(status=False):
     threadLock.release()
 
 
-def screenOff():
+def screenOff(infoIndex=0):
+    """熄灭屏幕
+
+    :param infoIndex: 访问info里的第几个元素，这个是最后为了显示通过什么方式熄灭屏幕的
+    :return:
+    """
+    info = ['超时自动', '按键手动']
     windll.user32.PostMessageW(HWND_BROADCAST, WM_SYSCOMMAND,
                                SC_MONITORPOWER, MonitorPowerOff)
 
@@ -32,7 +38,7 @@ def screenOff():
                           'USER32', '', SW_SHOW)
     setScreenStatus()
     setMute()
-    print(datetime.now(), '熄灭屏幕，开启静音')
+    print(f'{datetime.now()} {info[infoIndex]}熄灭屏幕，开启静音')
 
 
 if __name__ == "__main__":
