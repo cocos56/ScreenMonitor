@@ -2,3 +2,4 @@ pynput
 comtypes
 pycaw
 keyboard
+pypiwin32

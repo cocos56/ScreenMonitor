@@ -4,6 +4,7 @@ from mute import setMute
 from datetime import datetime
 from screen import screenOff, getScreenStatus, setScreenStatus
 from config import _screenOffTimer
+from excluded_programs import is_current_window_excluded_program
 
 _timer = 0
 
@@ -26,7 +27,9 @@ def updateTimer():
         if not getScreenStatus():
             continue
         print(f'距离息屏还有：{_screenOffTimer - getTimer()}秒')
-        if getTimer() > _screenOffTimer:
+        if is_current_window_excluded_program():
+            setTimer()
+        elif getTimer() > _screenOffTimer:
             screenOff()
 
 
