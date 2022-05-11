@@ -10,7 +10,7 @@ parser.add_argument("-v", "--version", help="Show the current version.",
                     action="store_true")
 
 args = parser.parse_args()
-if args.mute:
+if args.version:
     print("The current version is v0.0.1")
     exit(0)
 
