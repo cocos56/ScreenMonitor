@@ -10,7 +10,8 @@ volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 
 def setMute(flag=1):
-    if volume.GetMute() == flag: return
+    if volume.GetMute() == flag:
+        return
     volume.SetMute(flag, None)
 
 
@@ -21,7 +22,6 @@ parser.add_argument("-m", "--mute", help="Show the current version.",
 args = parser.parse_args()
 if args.mute:
     print("The current version is v1.0")
-
 
 if __name__ == "__main__":
     setMute()
