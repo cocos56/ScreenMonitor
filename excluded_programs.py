@@ -10,10 +10,9 @@ def is_current_window_excluded_program():
         classname = win32gui.GetClassName(current_window)
         title = win32gui.GetWindowText(current_window)
         for i in _excluded_programs:
-            if i['classname'] == classname and i['title'] == title:
+            if i['classname'] == classname and i['title'] in title:
                 print(f'{i["name"]}正在阻止息屏')
                 return True
     except pywintypes.error as e:
         print(e)
     return False
-
